@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Paleblue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center space-between;
+  align-items: center;
+  width: 375px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.container h1 {
+  margin-top: 30px;
+}
+.container .par,
+h1 {
+  margin: auto 20px 15px 20px;
+  text-align: center;
+}
+
+.subs {
+  background-color: var(--Verypaleblue);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
+.subs img {
+  padding-right: 20px;
+}
+
+.Annualbox {
+  padding-right: 60px;
+}
+
+.price {
+  padding-top: 5px;
+  color: var(--Desaturatedblue);
+}
+
+.subs a {
+  color: var(--Brightblue);
+  font-weight: bolder;
+}
+
+.subs a:active {
+  color: var(--Darkblue);
+}
+.paymentbtn {
+  margin: 20px;
+  background-color: var(--Brightblue);
+  color: white;
+  text-decoration: none;
+  width: 75%;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.paymentbtn:active {
+  background-color: var(--Darkblue);
+}
+
+.cancelorder {
+  text-decoration: none;
+  color: var(--Desaturatedblue);
+}
+
+.cancelorder:active {
+  color: black;
+}
